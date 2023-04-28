@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let palavra = prompt("Digite uma palavra:");
+        
+        let tam = palavra.length;
+        let i = 0;
+        let palindromo = true;
+        while (i < tam / 2) {
+        if (palavra[i] !== palavra[tam - i - 1]) {
+        palindromo = false;
+        break;
+        }
+        i++;
+        }
+        if (palindromo) {
+        alert(palavra + " é um palíndromo!");
+        } else {
+        alert(palavra + " não é um palíndromo!");
+        }
+     </script>   
+</body>
+</html>
+
